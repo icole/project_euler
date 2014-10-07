@@ -4,8 +4,10 @@ end
 
 primes = []
 num = 2
-while primes.count != 10002
-  primes << num if check_prime(num)
+while primes.count != 10001
+  if check_prime(num)
+    primes << num
+  end
   num += 1
 end
 puts primes.last
